@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Flask App</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+		<strong><link rel='stylesheet' href="{{ url_for('static', filename='css/main.css')}}"></strong>
+	</head>
+
+	<body>
+		<header>
+			<div class='container'>
+				<a href='/'><h1 class='logo'>Labelit</h1></a>
+				<strong><nav>
+					<ul class='text'></ul>
+				</nav></strong>
+			</div>
+		</header>
+
+		<div class='container'>
+			{% block content %}
+			{% endblock content %}
+
+			{% block script %}
+			<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+			{% endblock script %}
+		</div>
+	</body>
+</html>

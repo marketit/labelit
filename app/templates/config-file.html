@@ -1,0 +1,20 @@
+{% extends 'layout.html' %}
+{% block content %}
+<form>
+    <div class="form-group">
+      <label for="file-directory">파일 입력 경로</label>
+      <input type="text" class='form-control' id='file-directory' placeholder='Enter Directory' value='/Users/whale/Desktop/image'>
+    </div>
+
+    <div id="content-config-file"></div>
+    <button type="submit" class='btn btn-primary'>다음</button>
+</form>
+
+
+
+{% endblock %}
+
+{% block script %}
+{{ super() }}
+<script type="text/javascript" src="{{ url_for('static', filename='js/config-file.js') }}"></script>
+{% endblock %}

@@ -1,0 +1,9 @@
+flask
+flask-restful
+flask-bootstrap
+pandas
+pymysql
+pymongo
+Pillow
+requests
+torchvision
