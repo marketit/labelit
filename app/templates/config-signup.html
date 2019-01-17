@@ -1,0 +1,32 @@
+{% extends 'layout.html' %}
+{% block content %}
+<form>
+    <div class="form-group">
+      <label for="id-signup">ID</label>
+      <input type="text" class='form-control' id='id-signup' placeholder='Enter ID' value='marketit'>
+    </div>
+    <div class="form-group">
+      <label for="password-signup">Password</label>
+      <input type="password" class='form-control' id='password-signup' placeholder='Enter Password' value='eoqkr'>
+    </div>
+    <div class="form-group">
+      <label for="repassword-signup">Password 확인</label>
+      <input type="password" class='form-control' id='repassword-signup' placeholder='Re-enter Password' value='eoqkr'>
+    </div>
+
+    <div class="form-group">
+      <label for="email-signup">E-mail</label>
+      <input type="text" class='form-control' id='email-signup' placeholder='Enter E-mail' value='whale@google.com'>
+    </div>
+
+    <div id="content-config-signup"></div>
+
+    <button type="submit" id='set-config' class='btn btn-primary'>다음</button>
+</form>
+
+{% endblock %}
+
+{% block script %}
+{{ super() }}
+<script type="text/javascript" src="{{ url_for('static', filename='js/config-signup.js') }}"></script>
+{% endblock %}
