@@ -1,0 +1,16 @@
+{% extends 'layout.html' %}
+{% block content %}
+<form>
+    <h2>축하합니다. Labelit 설치가 완료되었습니다.</h2>
+    <h3>확인버튼을 누르면 로그인 화면으로 이동합니다.</h3>
+    <button type="button" id='set-config' class='btn btn-primary' style="position: fixed; left: 50%; top:30%;"
+      onclick="location.href='/login'">시작</button>
+
+</form>
+
+{% endblock %}
+
+{% block script %}
+{{ super() }}
+
+{% endblock %}
