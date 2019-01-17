@@ -106,7 +106,10 @@ h4 {
   margin-right: 10px;
   letter-spacing: -1px;
   color: #2B2B2B;
-  display: inline;
+}
+
+h5 {
+  display: inline
 }
 
 ul.menu {
@@ -125,4 +128,12 @@ ul.menu li + li {
 ul.menu li a {
   color: #999;
   text-decoration: none;
+}
+
+.btn-lg {
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    width:200px;
+    height:200px;    //Specify your width here
 }
