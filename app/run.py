@@ -52,8 +52,37 @@ def config_file_set():
 	else:
 		return jsonify({'code': 400})
 
-@app.route('/config/signin')
-def config_signin():
-	return render_template('config-signin.html')
+@app.route('/config/signup')
+def config_signup():
+	return render_template('config-signup.html')
+
+@app.route('/config/signup/create', methods = ["POST"])
+def config_signin_create():
+	bSuccess = True
+
+	json_data = request.get_json(force=True)
+	print(json_data)
+
+	if bSuccess:
+		return jsonify({'code': 200})
+	else:
+		return jsonify({'code': 400})
+
+@app.route('/config/success')
+def config_success():
+	return render_template('config-success.html')
+
+@app.route('/login')
+def login():
+	return render_template('login.html')
+
+@app.route('/menu')
+def menu():
+	return render_template('menu.html')
+
+@app.route('/label/classify')
+def label_classify():
+	return render_template('label-classification.html')
+
 if __name__ == '__main__':
 	app.run(debug=True)

@@ -29,8 +29,6 @@ $(document).ready(function(){
       url: "config/sql/set",
       contentType: "application/json",
       dataType: "json"}).done(function(result){
-        console.log(dict_query)
-        console.log(result.code)
         if (result.code != 200){
           $('#content-config-sql').attr('class', 'alert alert-danger').attr('role', 'alert').text('연결에 실패!!')
           console.log('fail')

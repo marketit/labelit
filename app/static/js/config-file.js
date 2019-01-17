@@ -27,7 +27,7 @@ $(document).ready(function(){
         }
         else{
           console.log('success')
-          $(location).attr('href', '/config/signin')
+          $(location).attr('href', '/config/signup')
         }
       })
   }
